@@ -54,12 +54,12 @@ const EditProfile = ({ Email, Socket }) => {
     <div className="w-full h-full flex flex-col items-center justify-center  text-white p-6">
       <h2 className="text-2xl font-semibold mb-4">Edit Your Profile</h2>
       <div className="mb-4">
-        <label className="block mb-2">Name</label>
+        <label className="block mb-2 text-zinc-300">Name</label>
         <input
           type="text"
           value={name}
-          onChange={(e) => setName(e.target.value)}
-          className="border rounded p-2 w-full text-black"
+          onChange={(e) => setName(e.target.value)} placeholder="Enter Your New Name Here"
+          className="border-2 rounded border-zinc-700 placeholder:text-white placeholder:text-sm p-2 w-full text-white"
         />
       </div>
       <div className="mb-4">
@@ -67,8 +67,9 @@ const EditProfile = ({ Email, Socket }) => {
         <input
           type="text"
           value={username}
+          placeholder="Enter Your New Username Here"
           onChange={(e) => setUsername(e.target.value)}
-          className="border rounded p-2 w-full text-black"
+         className="border-2 rounded border-zinc-700 placeholder:text-white placeholder:text-sm p-2 w-full text-white"
         />
       </div>
       <div className="mb-4">
@@ -77,7 +78,8 @@ const EditProfile = ({ Email, Socket }) => {
           type="file"
           accept="image/*"
           onChange={handlePhotoChange}
-          className="border rounded p-2 w-full text-black"
+          placeholder="Upload Your New Profile Photo Here"
+           className="border-2 rounded border-zinc-700 bg-blue-600  p-2 w-full text-white"
         />
         {previewPhoto && (
           <img
