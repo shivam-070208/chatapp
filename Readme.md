@@ -4,12 +4,9 @@
 
 1. Clone the repository
 2. Install dependencies:
-```sh
-cd client && npm install
-cd ../server && npm install
-```
 
-3. Configure environment variables
+
+
 4. Start MongoDB server
 5. Run the application:
 ```sh
