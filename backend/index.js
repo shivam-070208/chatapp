@@ -29,12 +29,7 @@ const connectDB = require('./mongoDB/connect');
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// app.use(session({
-//     secret: 'ramram',
-//     resave: false,
-//     saveUninitialized: true,
-//     cookie: { secure: false } // Set secure: true if using HTTPS
-// }));
+
 
 // Importing routes
 const user = require('./Routes/user');
