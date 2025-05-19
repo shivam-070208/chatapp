@@ -61,7 +61,7 @@ const Chatextended = ({currentUser, Socket, Email,setlastMessage}) => {
   const fetchMessages = async () => {
     try {
       
-      const response = await axios.post(`http://localhost:8000/chat`, {
+      const response = await axios.post(`https://chatapp-1-gvkd.onrender.com/chat`, {
         senderId: Email,
         receiverId: currentUser.Email     },{
         credentials: 'include'

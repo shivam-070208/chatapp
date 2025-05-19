@@ -24,7 +24,7 @@ const App = () => {
   const CheckAlreadyLoggedin = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/isLoggedIn",
+        "https://chatapp-1-gvkd.onrender.com/isLoggedIn",
         {Credential:true},
         {
           withCredentials: true,
@@ -49,7 +49,7 @@ const App = () => {
 },[])
   useEffect(() => {
    if(isAllow && Email){
-    const newSocket = io('http://localhost:8000', {
+    const newSocket = io('https://chatapp-1-gvkd.onrender.com', {
       withCredentials: true,
       transports: ['websocket']
     });

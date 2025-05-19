@@ -31,7 +31,7 @@ const EditProfile = ({ Email, Socket }) => {
       formData.append("ProfilePhoto", profilePhoto);
     }
 
-    fetch("http://localhost:8000/api/update-profile", {
+    fetch("https://chatapp-1-gvkd.onrender.com/api/update-profile", {
       method: "POST",
       body: formData,
     })

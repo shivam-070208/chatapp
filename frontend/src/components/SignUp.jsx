@@ -23,7 +23,7 @@ const SignUp = ({setisAllow,setEmail,setUser}) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const result = await axios.post('http://localhost:8000/Signin', {
+            const result = await axios.post('https://chatapp-1-gvkd.onrender.com/Signin', {
                 Email: formData.Email,  
                 Password: formData.Password,
                 Name: formData.name, 

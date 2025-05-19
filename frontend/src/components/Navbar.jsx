@@ -11,7 +11,7 @@ const Navbar = ({setisAllow,Socket,setfriendOffline ,setfriendOnline}) => {
         if(Socket){
           Socket.disconnect()
         }
-       await axios.post('http://localhost:8000/Logout', {},{
+       await axios.post('https://chatapp-1-gvkd.onrender.com/Logout', {},{
       withCredentials: true
     
            });
