@@ -173,7 +173,9 @@ router.post('/Logout', (req, res) => {
     res.clearCookie('token'); 
     res.status(200).json({ message: "Logout successful" });
 });
-
+router.get('/',(req,res)=>{
+    res.send("hello")
+})
 
 router.post('/chat', async (req, res) => {
     try {
