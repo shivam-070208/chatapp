@@ -15,7 +15,7 @@ const GroupModel = require('./mongoDB/models/Group')
 const httpServer = createServer(app);
 const io = new Server(httpServer);
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "http://localhost:5173,https://chatapp-three-eta.vercel.app",
     credentials: true,
     methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
